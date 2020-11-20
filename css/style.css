@@ -88,6 +88,11 @@ html {
   100% {
     transform: translate(-50%, -50%); } }
 
+.about-us {
+  background-color: #cdc9c3;
+  margin: 5rem 0;
+  height: 100rem; }
+
 .our-games {
   padding: 4rem 0; }
 
