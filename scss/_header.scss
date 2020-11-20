@@ -9,6 +9,7 @@
     url(../img/football-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  // background-blend-mode: lighten;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   & .heading-1 {
