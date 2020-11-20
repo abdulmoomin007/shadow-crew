@@ -1,0 +1,56 @@
+.header {
+  //   background-color: black;
+  height: 80vh;
+  background-image: linear-gradient(
+      to top right,
+      rgba($secondary-light, 0.5),
+      rgba($secondary-dark, 0.5)
+    ),
+    url(../img/football-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  & .heading-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ShadowCrewWelcome 2s ease-in;
+    text-shadow: 0 2rem 4rem black;
+  }
+}
+
+.logo {
+  margin: 1rem;
+  width: 14.5rem;
+  height: 13rem;
+  z-index: 1;
+  cursor: pointer;
+  // -webkit-mask-image: linear-gradient(
+  //   to top right,
+  //   rgba($secondary-light, 0.5),
+  //   rgba($secondary-dark, 0.5)
+  // );
+  mask-image: linear-gradient(
+    to top right,
+    rgba($secondary-light, 0.5),
+    rgba($secondary-dark, 0.5)
+  );
+  text-shadow: 0 5rem 5rem black;
+}
+
+@keyframes ShadowCrewWelcome {
+  0% {
+    transform: translate(-50%, -500%);
+  }
+  90% {
+    transform: translate(-50%, -30%);
+  }
+  95% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

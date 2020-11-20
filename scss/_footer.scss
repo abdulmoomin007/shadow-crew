@@ -1,0 +1,32 @@
+.footer {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: auto;
+  //   justify-items: center;
+  grid-gap: 0.1rem;
+
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: $secondary-dark;
+
+    & li {
+      list-style: none;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: $primary-dark;
+  margin-top: 2rem;
+  text-align: center;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}

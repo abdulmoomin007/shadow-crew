@@ -1,0 +1,32 @@
+.heading-1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: $primary-light;
+  text-align: center;
+}
+
+.heading-2 {
+  // display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 3rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $secondary-light,
+    $secondary-dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  // -webkit-mask-clip: content-box;
+  margin-bottom: 3rem;
+}
+
+.heading-3 {
+  text-shadow: 0 1rem 4rem black;
+  text-align: center;
+}
+
+.white-btn {
+}

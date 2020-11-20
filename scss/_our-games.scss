@@ -1,0 +1,24 @@
+.our-games {
+  //   display: flex;
+  padding: 4rem 0;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  & > * {
+    height: 45rem;
+    width: 60rem;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+  }
+  &__tournament {
+    background-image: linear-gradient(to right bottom, #bedbbb, #8db596);
+    padding: 3rem 1rem;
+  }
+  &__league {
+    background-image: linear-gradient(to top left, #ffda77, #ffa45b);
+    padding: 3rem 1rem;
+  }
+}

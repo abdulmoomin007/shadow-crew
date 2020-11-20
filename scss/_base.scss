@@ -1,0 +1,20 @@
+// f9f7cf
+
+$primary-light: #cdc9c3;
+$primary-dark: #555555;
+$secondary-light: #c62a88;
+$secondary-dark: #590995;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  margin: 3rem 3rem;
+}

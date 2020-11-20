@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  margin: 3rem 3rem; }
+
+.heading-1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #cdc9c3;
+  text-align: center; }
+
+.heading-2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 3rem;
+  background-image: linear-gradient(to right bottom, #c62a88, #590995);
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 3rem; }
+
+.heading-3 {
+  text-shadow: 0 1rem 4rem black;
+  text-align: center; }
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(to top right, rgba(198, 42, 136, 0.5), rgba(89, 9, 149, 0.5)), url(../img/football-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  .header .heading-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ShadowCrewWelcome 2s ease-in;
+    text-shadow: 0 2rem 4rem black; }
+
+.logo {
+  margin: 1rem;
+  width: 14.5rem;
+  height: 13rem;
+  z-index: 1;
+  cursor: pointer;
+  mask-image: linear-gradient(to top right, rgba(198, 42, 136, 0.5), rgba(89, 9, 149, 0.5));
+  text-shadow: 0 5rem 5rem black; }
+
+@keyframes ShadowCrewWelcome {
+  0% {
+    transform: translate(-50%, -500%); }
+  90% {
+    transform: translate(-50%, -30%); }
+  95% {
+    transform: translate(-50%, -60%); }
+  100% {
+    transform: translate(-50%, -50%); } }
+
+.our-games {
+  padding: 4rem 0; }
+
+.card {
+  display: flex;
+  justify-content: space-evenly; }
+  .card > * {
+    height: 45rem;
+    width: 60rem;
+    color: white;
+    font-size: large;
+    text-transform: uppercase; }
+  .card__tournament {
+    background-image: linear-gradient(to right bottom, #bedbbb, #8db596);
+    padding: 3rem 1rem; }
+  .card__league {
+    background-image: linear-gradient(to top left, #ffda77, #ffa45b);
+    padding: 3rem 1rem; }
+
+.gallery {
+  height: 50vh;
+  padding: 1.5rem; }
+
+.footer {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0.1rem; }
+  .footer__item {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background-color: #590995; }
+    .footer__item li {
+      list-style: none;
+      text-align: center;
+      padding: 0.5rem; }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #555555;
+  margin-top: 2rem;
+  text-align: center;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
