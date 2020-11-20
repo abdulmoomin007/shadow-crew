@@ -99,7 +99,8 @@ html {
 .about-us {
   background-color: #cdc9c3;
   margin: 5rem 0;
-  height: 70rem; }
+  height: 70rem;
+  padding: 4rem; }
 
 .our-games {
   padding: 4rem 0; }
