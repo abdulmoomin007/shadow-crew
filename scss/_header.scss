@@ -27,6 +27,11 @@
   width: 14.5rem;
   height: 13rem;
   z-index: 1;
+  @media (max-width: 600px) {
+    margin: 0.4rem 0;
+    width: 8rem;
+    height: 7rem;
+  }
   cursor: pointer;
   // -webkit-mask-image: linear-gradient(
   //   to top right,

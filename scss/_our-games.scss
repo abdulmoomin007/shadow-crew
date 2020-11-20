@@ -17,6 +17,10 @@
     @media (max-width: 900px) {
       margin: 5rem auto;
     }
+    @media (max-width: 400px) {
+      height: 45rem;
+      width: 30rem;
+    }
     // z-index: 2;
   }
   &__tournament {
