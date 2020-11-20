@@ -26,7 +26,35 @@
 .heading-3 {
   text-shadow: 0 1rem 4rem black;
   text-align: center;
+  color: white;
+  font-size: large;
+  text-transform: uppercase;
+  margin-top: 3rem;
 }
 
-.white-btn {
+.btn-white {
+  padding: 1rem 2rem;
+  color: $secondary-dark;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.5);
+  &:focus {
+    outline: 0;
+  }
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translate(-50%, -1%);
+  }
+
+  &:active {
+    transform: translate(-50%, 1%);
+  }
 }

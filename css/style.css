@@ -29,7 +29,30 @@ html {
 
 .heading-3 {
   text-shadow: 0 1rem 4rem black;
-  text-align: center; }
+  text-align: center;
+  color: white;
+  font-size: large;
+  text-transform: uppercase;
+  margin-top: 3rem; }
+
+.btn-white {
+  padding: 1rem 2rem;
+  color: #590995;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5); }
+  .btn-white:focus {
+    outline: 0; }
+  .btn-white:hover, .btn-white:active {
+    cursor: pointer; }
+  .btn-white:hover {
+    transform: translate(-50%, -1%); }
+  .btn-white:active {
+    transform: translate(-50%, 1%); }
 
 .header {
   height: 80vh;
@@ -71,18 +94,63 @@ html {
 .card {
   display: flex;
   justify-content: space-evenly; }
+  @media (max-width: 900px) {
+    .card {
+      display: block; } }
   .card > * {
-    height: 45rem;
-    width: 60rem;
-    color: white;
-    font-size: large;
-    text-transform: uppercase; }
+    height: 38rem;
+    width: 40rem;
+    color: #555555; }
+    @media (max-width: 900px) {
+      .card > * {
+        margin: 5rem auto; } }
   .card__tournament {
     background-image: linear-gradient(to right bottom, #bedbbb, #8db596);
-    padding: 3rem 1rem; }
+    padding: 3rem 1rem;
+    position: relative; }
+    .card__tournament ul {
+      padding: 5%;
+      font-size: medium;
+      line-height: 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .card__tournament button {
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%); }
   .card__league {
     background-image: linear-gradient(to top left, #ffda77, #ffa45b);
-    padding: 3rem 1rem; }
+    padding: 3rem 1rem;
+    position: relative; }
+    .card__league ul {
+      padding: 5%;
+      font-size: medium;
+      line-height: 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .card__league button {
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%); }
+
+.rules {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 900px) {
+    .rules {
+      display: block; } }
+  .rules > * {
+    padding: 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #555555;
+    background-color: #cdc9c3; }
 
 .gallery {
   padding: 1.5rem; }

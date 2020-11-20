@@ -1,24 +1,67 @@
 .our-games {
   //   display: flex;
   padding: 4rem 0;
+  // background-color: $primary-dark;
 }
 
 .card {
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 900px) {
+    display: block;
+  }
   & > * {
-    height: 45rem;
-    width: 60rem;
-    color: white;
-    font-size: large;
-    text-transform: uppercase;
+    height: 38rem;
+    width: 40rem;
+    color: $primary-dark;
+    @media (max-width: 900px) {
+      margin: 5rem auto;
+    }
+    // z-index: 2;
   }
   &__tournament {
     background-image: linear-gradient(to right bottom, #bedbbb, #8db596);
     padding: 3rem 1rem;
+    position: relative;
+    // color: white;
+    // font-size: large;
+    // text-transform: uppercase;
+    & ul {
+      padding: 5%;
+      font-size: medium;
+      line-height: 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    & button {
+      //   display: inline-block;
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   &__league {
     background-image: linear-gradient(to top left, #ffda77, #ffa45b);
     padding: 3rem 1rem;
+    position: relative;
+    & ul {
+      padding: 5%;
+      font-size: medium;
+      line-height: 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    & button {
+      //   display: inline-block;
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
