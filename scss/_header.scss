@@ -17,8 +17,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: ShadowCrewWelcome 2s ease-in;
-    text-shadow: 0 2rem 4rem black;
+    animation: ShadowCrewWelcome 3s ease-in;
+    text-shadow: 0 1rem 2rem black;
   }
 }
 
@@ -27,6 +27,7 @@
   width: 14.5rem;
   height: 13rem;
   z-index: 1;
+  // box-shadow: 0 1rem 2rem black;
   @media (max-width: 600px) {
     margin: 0.4rem 0;
     width: 8rem;
@@ -49,6 +50,7 @@
 @keyframes ShadowCrewWelcome {
   0% {
     transform: translate(-50%, -500%);
+    opacity: 0;
   }
   90% {
     transform: translate(-50%, -30%);
@@ -58,5 +60,6 @@
   }
   100% {
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
 }

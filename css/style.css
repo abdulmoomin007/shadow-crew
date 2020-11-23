@@ -47,7 +47,7 @@ html {
   font-weight: bolder;
   font-size: 2rem;
   border-radius: 50px;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
   .btn-white:focus {
     outline: 0; }
   .btn-white:hover, .btn-white:active {
@@ -69,8 +69,8 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: ShadowCrewWelcome 2s ease-in;
-    text-shadow: 0 2rem 4rem black; }
+    animation: ShadowCrewWelcome 3s ease-in;
+    text-shadow: 0 1rem 2rem black; }
 
 .logo {
   margin: 1rem;
@@ -88,13 +88,15 @@ html {
 
 @keyframes ShadowCrewWelcome {
   0% {
-    transform: translate(-50%, -500%); }
+    transform: translate(-50%, -500%);
+    opacity: 0; }
   90% {
     transform: translate(-50%, -30%); }
   95% {
     transform: translate(-50%, -60%); }
   100% {
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 
 .about-us {
   background-color: #cdc9c3;
