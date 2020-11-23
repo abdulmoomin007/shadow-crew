@@ -1,6 +1,79 @@
 .about-us {
   background-color: $primary-light;
   margin: 5rem 0;
-  height: 70rem;
+  // height: 70rem;
   padding: 4rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  // grid-template-rows: max-content max-content;
+  grid-gap: 4rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: 1060px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @media only screen and (max-width: 819px) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+  }
+  & p {
+    padding: 3rem;
+    display: inline-block;
+    // border: 1px solid #fff;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+  }
+  // & div {
+  //   display: inline-block;
+  //   // height: 7.5rem;
+  // }
+  &__team {
+    & img {
+      height: 7.5rem;
+      width: 7.5rem;
+      border-radius: 50%;
+    }
+  }
+  &__manager {
+    & img {
+      height: 7.5rem;
+      width: 7.5rem;
+      border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  &__captain {
+    & img {
+      height: 7.5rem;
+      width: 7.5rem;
+      border-radius: 50%;
+    }
+  }
+  &__wise-captain {
+    & img {
+      height: 7.5rem;
+      width: 7.5rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & div {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $secondary-dark;
+    padding: 1rem;
+  }
 }

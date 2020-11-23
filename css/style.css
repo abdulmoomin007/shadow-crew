@@ -101,8 +101,57 @@ html {
 .about-us {
   background-color: #cdc9c3;
   margin: 5rem 0;
-  height: 70rem;
   padding: 4rem; }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 4rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center; }
+  @media only screen and (max-width: 1060px) {
+    .about {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr; } }
+  @media only screen and (max-width: 819px) {
+    .about {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-template-rows: auto; } }
+  .about p {
+    padding: 3rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100; }
+  .about__team img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%; }
+  .about__manager img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    border-radius: 50%; }
+  .about__captain img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%; }
+  .about__wise-captain img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%; }
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .align div {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #590995;
+    padding: 1rem; }
 
 .our-games {
   padding: 4rem 0; }
@@ -216,6 +265,14 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-template-rows: auto;
   grid-gap: 0.1rem; }
+  @media only screen and (max-width: 1060px) {
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr; } }
+  @media only screen and (max-width: 819px) {
+    .footer {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-template-rows: auto; } }
   .footer__item {
     font-size: 1.6rem;
     font-weight: 400;
